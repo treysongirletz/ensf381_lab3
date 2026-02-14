@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3 -- Exercise 2</title>
+</head>
+
+<body>
+    <h1>JavaScript Lab Exercise 2</h1>
+    <script>
+        /*
+        function add(number1, number2){
+            return number1 + number2;
+        }
+
+        function subtract(number1, number2){
+            return number1 - number2;
+        }
+         */
+        /*
+        function add(number1, number2 = 5){
+            return number1 + number2;
+        }
+
+        function subtract(number1, number2 = 1){
+            return number1 - number2;
+        }
+           */ 
+        
+        let add = (number1, number2) => number1 + number2;
+        let subtract = (number1, number2) => number1 - number2;
+        let multiply = (number1, number2) => number1 * number2;
+        let divide = (number1, number2) => {
+            if (number2 == 0){
+                console.error("Cannot divide by zero");
+                return
+            }
+            return number1 / number2;
+        }
+
+        let calculator = (num1, num2, operation) =>{
+            return operation(num1, num2);
+        }
+            
+    </script>
+</body>
+
+</html>
